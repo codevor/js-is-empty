@@ -1,6 +1,6 @@
 {
   "name": "@codevor/js-is-empty",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "📭Basic empty checker",
   "main": "dist/js-is-empty.js",
   "unpkg": "dist/js-is-empty.min.js",
