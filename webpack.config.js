@@ -12,7 +12,7 @@ const {
 
 const isProduction = process.env.NODE_ENV === 'production';
 
-const libraryName = 'js-is-type';
+const libraryName = 'js-is-empty';
 
 const banner = `
   ${name} v${version}
@@ -40,13 +40,13 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
+        exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
           options: {
             presets: ['@babel/preset-env']
           }
-        },
-        exclude: /node_modules/
+        }
       }
     ]
   },
